@@ -1,0 +1,288 @@
+.job-card {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.job-card--top {
+  border-color: rgba(29, 200, 160, 0.4);
+  box-shadow: 0 4px 12px rgba(29, 200, 160, 0.1);
+}
+
+.job-card:hover {
+  border-color: var(--border2);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.job-card-main {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* SVG Donut Score */
+.donut-score {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.donut-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.donut-progress {
+  transition: stroke-dashoffset 0.8s ease-in-out;
+}
+
+.donut-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.donut-score-num {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+}
+
+.donut-score-pct {
+  font-size: 8px;
+  color: var(--text2);
+  margin-left: 1px;
+}
+
+.job-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.job-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.job-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.top-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(29, 200, 160, 0.15), rgba(29, 200, 160, 0.1));
+  color: var(--teal);
+  border: 1px solid rgba(29, 200, 160, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.rank-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 12px;
+  background: rgba(108, 99, 255, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(108, 99, 255, 0.25);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.job-meta {
+  font-size: 12px;
+  color: var(--text2);
+}
+
+.expand-icon {
+  font-size: 10px;
+  color: var(--text3);
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.job-card-detail {
+  padding: 0 16px 16px 78px;
+  border-top: 1px solid var(--border);
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.job-why {
+  font-size: 13px;
+  color: var(--text2);
+  margin: 12px 0;
+  line-height: 1.6;
+}
+
+.pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.pill {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 16px;
+  transition: all 0.15s;
+}
+
+.pill-green {
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--green);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.pill-green:hover {
+  background: rgba(34, 197, 94, 0.15);
+}
+
+.pill-red {
+  background: rgba(255, 107, 90, 0.08);
+  color: var(--coral);
+  border: 1px solid rgba(255, 107, 90, 0.2);
+}
+
+.pill-red:hover {
+  background: rgba(255, 107, 90, 0.12);
+}
+
+/* Job Action Buttons */
+.job-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.job-action-btn {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text2);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  min-width: 120px;
+  justify-content: center;
+}
+
+.job-action-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-action-btn.primary {
+  border-color: rgba(29, 200, 160, 0.3);
+  background: rgba(29, 200, 160, 0.05);
+  color: var(--teal);
+}
+
+.job-action-btn.primary:hover {
+  border-color: var(--teal);
+  background: rgba(29, 200, 160, 0.1);
+}
+
+.job-action-btn.secondary {
+  border-color: rgba(108, 99, 255, 0.3);
+  background: rgba(108, 99, 255, 0.05);
+  color: var(--accent);
+}
+
+.job-action-btn.secondary:hover {
+  border-color: var(--accent);
+  background: rgba(108, 99, 255, 0.1);
+}
+
+.job-action-btn.tertiary {
+  border-color: rgba(245, 158, 11, 0.3);
+  background: rgba(245, 158, 11, 0.05);
+  color: var(--amber);
+}
+
+.job-action-btn.tertiary:hover {
+  border-color: var(--amber);
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.action-icon {
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .job-card-detail { 
+    padding-left: 16px; 
+  }
+  
+  .job-actions {
+    flex-direction: column;
+  }
+  
+  .job-action-btn {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .job-card-main {
+    padding: 12px;
+    gap: 12px;
+  }
+  
+  .donut-score {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .donut-score-num {
+    font-size: 11px;
+  }
+  
+  .job-title {
+    font-size: 14px;
+  }
+  
+  .pills-row {
+    margin-bottom: 12px;
+  }
+}

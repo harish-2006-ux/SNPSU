@@ -1,0 +1,154 @@
+.culture-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.culture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.culture-section {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.culture-section:hover {
+  border-color: var(--border2);
+  transform: translateY(-2px);
+}
+
+.culture-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.culture-icon {
+  font-size: 16px;
+}
+
+.culture-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.culture-tip {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.6;
+  transition: all 0.15s;
+}
+
+.culture-tip:hover {
+  color: var(--text);
+  transform: translateX(4px);
+}
+
+.tip-dot {
+  color: var(--accent);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.culture-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.culture-example {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.culture-example:hover {
+  border-color: var(--border2);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.example-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.example-icon {
+  font-size: 14px;
+}
+
+.example-text {
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.6;
+}
+
+.culture-example:nth-child(1) {
+  border-left: 3px solid var(--accent);
+}
+
+.culture-example:nth-child(2) {
+  border-left: 3px solid var(--teal);
+}
+
+.culture-example:nth-child(3) {
+  border-left: 3px solid var(--amber);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .culture-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .culture-section {
+    padding: 0.75rem;
+  }
+  
+  .culture-example {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .culture-content {
+    gap: 1rem;
+  }
+  
+  .culture-section-title {
+    font-size: 13px;
+  }
+  
+  .culture-tip {
+    font-size: 12px;
+  }
+  
+  .example-text {
+    font-size: 12px;
+  }
+}

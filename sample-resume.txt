@@ -1,0 +1,27 @@
+John Doe
+Software Engineer
+
+EXPERIENCE:
+- 3 years as Full Stack Developer at TechCorp
+- Built scalable web applications using React, Node.js, and PostgreSQL
+- Led a team of 4 developers on e-commerce platform project
+- Implemented CI/CD pipelines using Docker and Jenkins
+
+SKILLS:
+- Programming: JavaScript, Python, Java, TypeScript
+- Frontend: React, Vue.js, HTML5, CSS3, Tailwind CSS
+- Backend: Node.js, Express, Django, Spring Boot
+- Databases: PostgreSQL, MongoDB, Redis
+- Cloud: AWS (EC2, S3, RDS), Docker, Kubernetes
+- Tools: Git, Jenkins, Jira, Figma
+
+EDUCATION:
+- B.Tech Computer Science Engineering, XYZ University (2019)
+- Relevant coursework: Data Structures, Algorithms, Database Systems
+
+PROJECTS:
+- E-commerce Platform: Built full-stack application serving 10k+ users
+- Task Management App: React + Node.js app with real-time updates
+- Data Analytics Dashboard: Python + D3.js visualization tool
+
+Looking for senior software engineering roles in international companies, particularly interested in fintech and e-commerce domains.
